@@ -1,20 +1,77 @@
-#logoBar{
+body{
+    height: 100%;
+    margin: 0;
+    background-color: violet;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+#logoBar {
   width: 30vw;
   height: 100vh;
+  padding: 20px; 
+  box-sizing: border-box;
+  text-align: center; 
 }
-#siteLogo{
-  width: 100%;
+#logoBar h1 {
+  font-family: 'Comic Sans MS', sans-serif; 
+  color: rgb(26, 44, 61); 
 }
-body {
-  display: flex;
+#logoBar h3 {
+  font-family: 'Comic Sans MS', sans-serif; 
+  color: rgb(26, 44, 61); 
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
+#siteLogo {
+    width: 100%;
+}
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    width: 70vw; 
+    padding: 10px;
 }
-.galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
+
+.card {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px black;
+    margin: 10px;
+    flex: 1 0 22%; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card .characterName {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #logoBar {
+        width: 100%;
+        height: auto;
+    }
+    .cards-container {
+      width: 100%;
+      height: auto;
+  }
+
+    #siteLogo {
+        width: 75%; 
+    }
 }
