@@ -1,3 +1,4 @@
+/* Main container */
 .container {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -9,6 +10,8 @@
 }
 
 
+
+/* Styles for the body */
 body, h1, h2, h3 {
     color: #212121;
     margin: 0;
@@ -18,6 +21,10 @@ label {
     display: none;
 }
 
+
+
+
+/* Styles for the top of the screen with DOS and icon */
 .header-top{
     display: flex;
     width: 80%;
@@ -28,18 +35,13 @@ label {
     background: #FFF;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
 }
-
-
 .header-top .title{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
-
 .header-top .title h1{
     width: auto;
-    /* height: 44px; */
     color: var(--Text-Black, #212121);
     font-family: "Nunito Sans";
     font-size: 32px;
@@ -47,8 +49,6 @@ label {
     font-weight: 700;
     line-height: normal;
 }
-
-
 .header-top .title h2{
     width: auto;
     color: var(--Text-Black, #212121);
@@ -66,13 +66,14 @@ label {
 .title h1, .title h2 {
     color: #212121;
 }
-
-
 .title h1 {
     margin-bottom: 5px;
 }
 
 
+
+
+/* Styles for the breadcrumbs */
 .breadcrumb-container{
     display: flex;
     padding: 0px 100px;
@@ -80,8 +81,6 @@ label {
     gap: 8px;
     align-self: stretch;
 }
-
-
 .breadcrumb {
     position: relative;
     border: 100px;
@@ -95,14 +94,15 @@ label {
     line-height: normal;
     text-decoration-line: underline;
 }
-
-
 .breadcrumb::after {
     content: ' >';
     font-weight: bold;
 }
 
 
+
+
+/* Styles for the heading of the webpage */
 .header-main{
     display: flex;
     width: auto;
@@ -110,8 +110,6 @@ label {
     align-items: center;
     gap: 8px;
 }
-
-
 .header-main h2{
     width: auto;
     flex-shrink: 0;
@@ -125,6 +123,10 @@ label {
 }
 
 
+
+
+
+/* Stlyes for the FAQ button and language selector */
 .header-bottom {
     display: flex;
     width: 90%;
@@ -133,8 +135,6 @@ label {
     justify-content: space-between;
     align-items: flex-start;
 }
-
-
 .header-bottom #tooltip-language-select{
     display: flex;
     width: auto;
@@ -152,8 +152,6 @@ label {
     font-weight: 400;
     line-height: 24px;
 }
-
-
 .header-bottom #faq-button{
     display: flex;
     width: auto;
@@ -173,6 +171,11 @@ label {
     line-height: 24px;
 }
 
+
+
+
+
+/* Styles for the cards contiaing information for the user */
 .info-cards-container{
     display: flex;
     width: 1440px;
@@ -180,8 +183,6 @@ label {
     align-items: flex-start;
     gap: 34px;
 }
-
-
 .info-card{
     display: flex;
     width: 392px;
@@ -193,7 +194,6 @@ label {
     border-radius: 4px;
     background: rgba(204, 230, 244, 0.50);
 }
-
 .info-card h3{
     color: var(--Text-Black, #212121);
     font-family: "Nunito Sans";
@@ -211,7 +211,6 @@ label {
     font-weight: 400;
     line-height: normal;
 }
-
 .info-card {
     background-color: #CCE6F4;
     padding: 20px;
@@ -219,7 +218,22 @@ label {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
+.info-card h3,
+.info-card p {
+    font-size: 24px;
+}
+/* To accomodate for mobile view */
+.small-screen {
+    display: none;
+}
 
+
+
+
+
+
+
+/* Styles for the body of the page where user inputs data */
 .body-card {
     display: flex;
     width:1440px;
@@ -234,8 +248,6 @@ label {
     border-radius: 4px;
     background: var(--Text-light, #F5F5F5);
 }
-
-
 .body-card .left-section {
     display: flex;
     width: 540px;
@@ -243,8 +255,6 @@ label {
     align-items: flex-start;
     gap: 36px;
 }
-
-
 .body-card .left-section select{
     display: flex;
     width: 340px;
@@ -256,8 +266,6 @@ label {
     border: 1px solid var(--Primary-blue, #165676);
     background: var(--Body-bg, #FFF);
 }
-
-
 .body-card .left-section .captcha-container{
     display: flex;
     flex-direction: column;
@@ -265,8 +273,6 @@ label {
     flex-direction: row;
     gap: 20px;
 }
-
-
 .body-card .left-section .captcha-container #captcha-input{
     display: flex;
     width: 340px;
@@ -278,8 +284,6 @@ label {
     background: var(--Body-bg, #FFF);
     box-sizing: border-box;
 }
-
-
 .body-card .left-section .captcha-container .icon-button{
     display: flex;
     width: 88px;
@@ -303,8 +307,7 @@ label {
     gap: 26px;
     background: var(--Body-bg, #f4f4f4);
 }
-
-
+/* Subcards for the right side information and button */
 .subcard {
     background-color: white;
     border-radius: 4px;
@@ -313,8 +316,6 @@ label {
     margin-bottom: 10px;
     border-radius: 5px;
 }
-
-
 .subcard p {
     flex: 1 0 0;
     color: var(--Text-Black, #212121);
@@ -324,8 +325,6 @@ label {
     font-weight: 400;
     line-height: normal;
 }
-
-
 .subcard button {
     display: flex;
     padding: 20px 32px;
@@ -344,6 +343,10 @@ label {
 }
 
 
+
+
+
+/* Styles for additional information */
 .bottom-footer {
     display: flex;
     width: 1440;
@@ -365,8 +368,6 @@ label {
     font-weight: 700;
     line-height: normal;
 }
-
-
 .bottom-footer ul{
     flex: 1 0 0;
     color: var(--Text-Black, #212121);
@@ -377,15 +378,13 @@ label {
     line-height: normal;
 }
 
-.info-card h3,
-.info-card p {
-    font-size: 24px;
-}
 
-.small-screen {
-    display: none;
-}
 
+
+
+
+
+/* Responsive for tablets */
 @media screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
@@ -523,7 +522,9 @@ label {
     }
 }
 
- @media screen and (max-width: 600px) {
+
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
     .container {
         flex-direction: column;
         width:100%;
